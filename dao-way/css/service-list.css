@@ -1,13 +1,13 @@
 #list-wrapper {
     background-color: #F8F8F8;
     min-width: 1200px;
+    padding-top: 20px;
 }
 
 #list-wrapper header {
     width: 100%;
-    background-color: #fff;
+    background-color: white;
     height: 140px;
-    margin-top: 10px;
 }
 
 #list-wrapper .info {
