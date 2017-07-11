@@ -1,0 +1,396 @@
+#list-wrapper {
+    background-color: #F8F8F8;
+    min-width: 1200px;
+}
+
+#list-wrapper header {
+    width: 100%;
+    background-color: #fff;
+    height: 140px;
+    margin-top: 10px;
+}
+
+#list-wrapper .info {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 60px;
+}
+
+.info > li {
+    height: 60px;
+}
+
+.info .left {
+    flex: 3;
+}
+
+.info .right {
+    flex: 2;
+    position: relative;
+}
+
+li.left {
+    font-size: 14px;
+}
+
+li.left .name {
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+li.left .dark {
+    color: #929292;
+    padding-left: 10px;
+}
+
+li.left .timeInfo {
+    color: black;
+}
+
+li.left .freeTimeInfo {
+    color: #E84B47;
+}
+
+li.right .small-wrapper {
+    position: absolute;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.small-wrapper .same {
+    flex: 1;
+    position: relative;
+
+}
+
+.same:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background-color: #E5E7EC;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.small-wrapper .others {
+    flex: 1;
+}
+
+.hit {
+    color: #E84B47;
+}
+
+.desc {
+    padding-top: 3px;
+    color: #333;
+}
+
+#list-wrapper nav {
+    width: 100%;
+    height: 40px;
+    background-color: #323434;
+}
+
+#list-wrapper nav ul.menu {
+    width: 1200px;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    background-color: #323434;
+}
+
+.menu li {
+    width: 140px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.menu li a {
+    color: white;
+    font-size: 14px;
+}
+
+.menu li.active {
+    background-color: #424242;
+}
+
+/*开始服务项目内容区域*/
+.content {
+    width: 1200px;
+    margin: 20px auto 0;
+    display: flex;
+}
+
+.tab-wrapper {
+    width: 960px;
+    background-color: #fff;
+}
+#other-part{
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+.tab-wrapper .img-wrapper {
+    width: 200px;
+    height: 200px;
+}
+
+.tab-wrapper .loadMore {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+
+.loadMore span {
+    margin: 20px 0 20px 0;
+    border: 1px solid #929292;
+    width: 200px;
+    display: inline-block;
+    line-height: 50px;
+    border-radius: 10px;
+    text-indent: -10px;
+    cursor: pointer;
+    color: #929292;
+    background-color: #fff;
+}
+
+.loadMore span i {
+    display: inline-block;
+    width: 12px;
+    height: 7px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background: url("../img/sellerIn/fuwu_down.jpg") no-repeat;
+}
+
+.img-wrapper img {
+    width: 150px;
+    margin: 25px;
+    border: 1px solid #E5E5E5;
+}
+
+/*.side-wrapper{
+    margin-left: 10px;
+    width: 230px;
+    border: 1px solid;
+}*/
+.box-rt {
+    margin-left: 10px;
+    width: 230px;
+}
+
+.box-rt .seller-in {
+    height: 300px;
+    background: url("../img/sellerIn/seller-in.jpg") no-repeat;
+}
+
+.box-rt .qrcode {
+    margin-top: 5px;
+    height: 290px;
+    background: url("../img/sellerIn/qr_bg.jpg") no-repeat;
+    text-align: center;
+}
+
+.qrcode > img {
+    width: 126px;
+    height: auto;
+    margin-top: 55px;
+}
+
+.tab-title {
+    position: relative;
+    width: 915px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 25px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.tab-title::before {
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 4px;
+    background-color: #FB474F;
+}
+
+.tab {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #F8F8F8;
+}
+
+.tab .desc-wrapper {
+    flex: 1;
+}
+
+.desc-wrapper .t1 {
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 25px;
+}
+
+.desc-wrapper .p1 {
+    color: #929292;
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.desc-wrapper span {
+    font-size: 14px;
+    color: #929292;
+}
+
+.desc-wrapper .sp {
+    color: #FC545E;
+}
+
+.desc-wrapper .s1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.desc-wrapper .s2 {
+    font-weight: bold;
+}
+
+.desc-wrapper .s3 {
+    margin-left: 20px;
+}
+
+.desc-wrapper .s4 {
+    text-decoration: line-through;
+}
+
+.desc-wrapper .last {
+    margin-left: 500px;
+}
+
+/*评论样式编写*/
+/*商家简介*/
+
+.sellerInfo-wrapper, .intro-wrapper {
+    background-color: #fff;
+    padding: 0 20px 0 25px;
+}
+.sellerInfo-wrapper{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.company{
+    line-height: 60px;
+    font-size: 20px;
+}
+.company img{
+    vertical-align: middle;
+}
+div.text{
+}
+.text>p{
+    line-height: 30px;
+    color: #929292;
+}
+
+
+.common{
+    width: 960px;
+}
+.common > p {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.common > p::before {
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 4px;
+    background-color: #FB474F;
+}
+.userInfo{
+    display: flex;
+    padding: 20px 0 0;
+    min-height: 160px;
+}
+.userInfo .avatar{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.userInfo .avatar>img{
+    width: 100%;
+    border-radius: 6px;
+}
+.demons{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.demons li{
+    line-height: 30px;
+}
+.demons .stars{
+}
+.demons .date{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.stars>img{
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+.demons i {
+    margin-right: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    background: url('../img/list/position.jpg') no-repeat bottom;
+}
+.demons li:first-child{
+    font-size: 14px;
+}
+.demons .last-li{
+    color: #929292;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.reply{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #929292;
+
+}
+.reply .high-light{
+    color: #00E0D3;
+}
+.reply .contents{
+    padding-left: 10px;
+}
+.reply span{
+    line-height: 25px;
+}
+
+/*------------------------*/
