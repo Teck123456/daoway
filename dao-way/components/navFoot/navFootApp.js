@@ -1,0 +1,1 @@
+angular.module('navFootApp', ['navFootApp.controllers', 'navFootApp.services'])

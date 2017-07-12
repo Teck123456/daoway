@@ -1,0 +1,150 @@
+    <div class="sticky-wrapper">
+        <ul class="first-wrapper">
+            <li ng-repeat="c in contents">
+                <a href="javascript:;">{{c.name}}</a><i></i>
+                <ul class="little-wrapper">
+                    <li ng-repeat="item in c.projects2"><a href="javascript:;">{{item.name}}</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide first"></div>
+                <div class="swiper-slide second"></div>
+                <div class="swiper-slide third"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="{{$index % 2 ==0 ? 'odd': 'even'}} common" ng-repeat="c in contents">
+            <div class="container">
+                <h2>{{c.name}}</h2>
+                <p>{{c.detail}}</p>
+                <div class="moreInfo">
+                    <a href="#">更多服务&gt;</a>
+                </div>
+                <div class="box-wrapper">
+                    <a href="#">
+                        <div class="box">
+                            <div class="img-wrapper">
+                                <img src="./img/index/house-clean_01.jpg">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>家庭保洁</h3>
+                                <p class="description">
+                                    服务内容：
+                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
+                                </p>
+                            </div>
+                            <div class="litter-bar">
+                                <div class="txt">
+                                    <font>30</font><span>元/小时</span>
+                                </div>
+                                <button>查看详情</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box">
+                            <div class="img-wrapper">
+                                <img src="./img/index/house-clean_01.jpg">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>家庭保洁</h3>
+                                <p class="description">
+                                    服务内容：
+                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
+                                </p>
+                            </div>
+                            <div class="litter-bar">
+                                <div class="txt">
+                                    <font>30</font><span>元/小时</span>
+                                </div>
+                                <button>查看详情</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box">
+                            <div class="img-wrapper">
+                                <img src="./img/index/house-clean_01.jpg">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>家庭保洁</h3>
+                                <p class="description">
+                                    服务内容：
+                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
+                                </p>
+                            </div>
+                            <div class="litter-bar">
+                                <div class="txt">
+                                    <font>30</font><span>元/小时</span>
+                                </div>
+                                <button>查看详情</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box">
+                            <div class="img-wrapper">
+                                <img src="./img/index/house-clean_01.jpg">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>家庭保洁</h3>
+                                <p class="description">
+                                    服务内容：
+                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
+                                </p>
+                            </div>
+                            <div class="litter-bar">
+                                <div class="txt">
+                                    <font>30</font><span>元/小时</span>
+                                </div>
+                                <button>查看详情</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box">
+                            <div class="img-wrapper">
+                                <img src="./img/index/house-clean_01.jpg">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>家庭保洁</h3>
+                                <p class="description">
+                                    服务内容：
+                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
+                                </p>
+                            </div>
+                            <div class="litter-bar">
+                                <div class="txt">
+                                    <font>30</font><span>元/小时</span>
+                                </div>
+                                <button>查看详情</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    effect: 'fade',
+    fade: {
+      crossFade: false,
+    },
+    autoplay: 3000,
+    autoplayDisableOnInteraction: false,
+    loop: true,
+    paginationClickable: true,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+  })
+
+</script>

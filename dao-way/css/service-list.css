@@ -1,7 +1,8 @@
 #list-wrapper {
     background-color: #F8F8F8;
     min-width: 1200px;
-    padding-top: 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 #list-wrapper header {
@@ -392,5 +393,7 @@ div.text{
 .reply span{
     line-height: 25px;
 }
-
+.border{
+    padding-bottom: 15px;
+}
 /*------------------------*/

@@ -1,0 +1,1 @@
+angular.module('homeApp', ['homeApp.controllers', 'homeApp.services'])

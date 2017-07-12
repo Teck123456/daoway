@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="./css/service-provider.css">
+<div class="provider-container">
+    <div class="provider-wrapper">
+        <div class="title">
+            服务商
+        </div>
+        <div class="box-wrapper">
+            <div class="box-lt">
+                <a href="javascript:;" ng-repeat="provider in providers">
+                    <div class="box">
+                        <div class="img-container">
+                            <img ng-src="{{provider.img}}">
+                        </div>
+                        <p class="p-top">
+                            <img src="./img/sellerIn/home.png">
+                            <b>{{provider.name}}</b>
+                        </p>
+                        <p class="p-bottom">
+                            <span class="s-lt">已接单{{provider.sales}}单</span>
+                            <span class="s-rt">好评{{provider.goodRate}}%</span>
+                        </p>
+                    </div>
+                </a>
+                <div class="loadMore" style="clear: both">
+                    <span>点击查看更多商家<i></i></span>
+                </div>
+            </div>
+            <div class="box-rt">
+                <div class="seller-in"></div>
+                <div class="qrcode">
+                    <img src="./img/sellerIn/qr-code.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

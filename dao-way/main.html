@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="mainApp">
+<head>
+    <base href="http://localhost:8088/dao-way/">
+    <meta charset="UTF-8">
+    <style>
+        .ng-cloak{
+            display: none;
+        }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+
+    <script type="text/javascript" src="./mainApp.js" charset="UTF-8"></script>
+
+    <script src="./components/home/controllers/homeControllers.js"></script>
+    <script src="./components/home/services/homeServices.js"></script>
+    <script src="./components/home/homeApp.js"></script>
+
+    <script src="./components/user/controllers/userControllers.js"></script>
+    <script src="./components/user/services/userServices.js"></script>
+    <script src="./components/user/userApp.js"></script>
+
+    <script src="./components/navFoot/controllers/navFootControllers.js"></script>
+    <script src="./components/navFoot/services/navFootServices.js"></script>
+    <script src="./components/navFoot/navFootApp.js"></script>
+
+    <script src="./components/provider/controllers/providerControllers.js"></script>
+    <script src="./components/provider/services/providerServices.js"></script>
+    <script src="./components/provider/providerApp.js"></script>
+
+    <script src="./components/product/controllers/productControllers.js"></script>
+    <script src="./components/product/services/productServices.js"></script>
+    <script src="./components/product/productApp.js"></script>
+
+    <script src="./components/productDetail/controllers/proDetailControllers.js"></script>
+    <script src="./components/productDetail/services/proDetailServices.js"></script>
+    <script src="./components/productDetail/proDetailApp.js"></script>
+</head>
+
+<body>
+<!--<div class="g-header">
+    &lt;!&ndash;登录&ndash;&gt;
+    <div id="boxChangeLog" ng-show="loginForm">
+        <div id="closeBox" class="closeBox" ng-click="closeBox()"></div>
+        <form ng-submit="login(user)">
+            <ul class="U_login">
+                <li class="Li_login" style="text-align: center;padding-right: 30px;"><span>请使用手机号登录</span></li>
+                <li class="Li_login"><input type="text"
+                                            ng-model="user.mobilephone" placeholder="手机号" class="form-control"
+                                            autocomplete="off"/></li>
+                <li class="Li_login"><input type="password"
+                                            ng-model="user.password" placeholder="密码" class="form-control"
+                                            autocomplete="off"/></li>
+                <li class="Li_login">
+                    <input type="text" ng-model="imageCode" placeholder="验证码"
+                           style="width: 150px;">
+                </li>
+                <li class="Li_login2">
+                    <button type="submit" class="btn">立即登录</button>
+                    </a></li>
+                <li class="li_login2" style="font-size: 14px; margin-top: 8px;text-align: center;">还没有账号?&nbsp;<a
+                        href="javascript:void(0)" ng-click="showRegist()">马上注册</a></li>
+
+            </ul>
+        </form>
+    </div>
+    &lt;!&ndash; 注册模块 &ndash;&gt;
+    <div id="boxChangeReg" ng-show="registForm">
+        <center>
+            <form ng-submit="register(user)">
+                <ul id="U_reg">
+                    <li class="li_reg"><span>注册</span></li>
+                    <li class="li_reg"><input type="text" id="mobilephone"
+                                              ng-model="user.mobilephone" placeholder="手机号" autocomplete="off"></li>
+                    <li class="li_reg"><input type="password"
+                                              ng-model="user.password" placeholder="密码" autocomplete="off"></li>
+                    <li class="li_reg"><input type="text" placeholder="验证码"
+                                              ng-model="user.code" style="width: 120px;">
+                        <input id="btnSendCode" type="button" class="btn" ng-click="showImgeCode(user)" value="获取验证码"/>
+                    </li>
+                    <li class="li_reg2">
+                        <button type="submit" class="btn">立即注册</button>
+                    </li>
+                    <li class="li_reg2">
+                        <span>已有账号？</span>
+                        <a href="" ng-click="showLogin()">立即登录</a>
+                    </li>
+                </ul>
+            </form>
+
+        </center>
+    </div>
+</div>-->
+<div class="world" ng-controller="navFootCtrl" class="ng-cloak">
+    <div ng-show="isShow" class="header-wrapper">
+        <header id="header">
+            <nav>
+                <a href="./main.html#/index">
+                    <div class="logo-wrapper"></div>
+                </a>
+                <ul class="menu-wrapper">
+                    <li>
+                        <a href="javascript:;">
+                            <img class="icon" src="./img/index/citypoint.png" alt="">
+                            <span>北京</span>
+                            <span class="city">切换城市</span>
+                        </a>
+                    </li>
+                    <li><a ng-class="{active: isActive('/index')}" href="./main.html#/index">首页</a></li>
+                    <li><a href="javascript:;">下载APP</a></li>
+                    <li><a ng-class="{active: isActive('/provider')}" href="./main.html#/provider">服务商</a></li>
+                    <li><a href="javascript:;">商家入驻</a></li>
+                    <li><a href="javascript:;">关于我们</a></li>
+                    <li><a href="./main.html#/login">商家登录</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div ng-view></div>
+    <div ng-show="isShow">
+        <footer>
+            <div class="title">
+                热门城市
+            </div>
+            <ul class="cities">
+                <li><a href="#">北京</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">广州</a></li>
+                <li><a href="#">深圳</a></li>
+                <li><a href="#">成都</a></li>
+                <li><a href="#">天津</a></li>
+                <li><a href="#">南京</a></li>
+                <li><a href="#">杭州</a></li>
+                <li><a href="#">重庆</a></li>
+                <li><a href="#">苏州</a></li>
+                <li><a href="#">武汉</a></li>
+                <li><a href="#">长沙</a></li>
+                <li><a href="#">济南</a></li>
+                <li><a href="#">郑州</a></li>
+                <li><a href="#">西安</a></li>
+                <li><a href="#">沈阳</a></li>
+                <li><a href="#">福州</a></li>
+                <li><a href="#">厦门</a></li>
+                <li><a href="#">南昌</a></li>
+                <li><a href="#">合肥</a></li>
+                <li><a href="#">宁波</a></li>
+                <li><a href="#">无锡</a></li>
+                <li><a href="#">青岛</a></li>
+                <li><a href="#">大连</a></li>
+                <li><a href="#">东莞</a></li>
+                <li><a href="#">佛山</a></li>
+                <li><a href="#">石家庄</a></li>
+                <li><a href="#">哈尔滨</a></li>
+                <li><a href="#">太原</a></li>
+                <li><a href="#">昆明</a></li>
+                <li><a href="#">贵阳</a></li>
+                <li><a href="#">南宁</a></li>
+                <li><a href="#">温州</a></li>
+            </ul>
+        </footer>
+        <!--到位服务保障部分-->
+        <div class="service">
+            <div class="container">
+                <h2>到位<span>服务</span>保障</h2>
+                <p>到位平台担保交易安全，交易未成功100%退款</p>
+                <div class="circle-wrapper">
+                    <div class="circle"><span>服务多</span></div>
+                    <div class="circle"><span>上门快</span></div>
+                    <div class="circle"><span>有保障</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <p>&copy;2015 版权所有 到位 daoway.com 京ICP备15001471号-1</p>
+            <p>北京邻家科技有限公司</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+  var backButton = $('#toTop');
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > $(window).width()) {
+      backButton.fadeIn();
+    } else {
+      backButton.fadeOut();
+    }
+  })
+
+  backButton.on('click', function () {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 300)
+  })
+
+  $(window).trigger('scroll');
+
+</script>
+<script>
+  window.onscroll = function () {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+    if(scrollTop > 300 && scrollTop <600) {
+      $('.header-wrapper').fadeOut('slow')
+    }
+    else if(scrollTop >=600){
+      $('.header-wrapper').fadeIn('slow')
+      $('.header-wrapper').css('borderBottom','1px solid #E5E5E5');
+      $('.header-wrapper,header').css('backgroundColor','rgba(255,255,255,.8)');
+      $('.header-wrapper,header').css('transition','all .3s');
+    }else {
+      $('.header-wrapper').fadeIn('slow')
+    }
+  }
+</script>
+</body>
+</html>

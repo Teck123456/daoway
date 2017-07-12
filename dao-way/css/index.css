@@ -1,7 +1,9 @@
 html {
     overflow-x: hidden;
 }
-
+.active{
+    color: #E94840 !important;
+}
 .world {
     width: 100%;
     height: auto;
