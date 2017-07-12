@@ -2,7 +2,7 @@ angular
   .module(
     'mainApp',
     ['homeApp', 'userApp', 'navFootApp', 'providerApp',
-      'productApp', 'proDetailApp', 'ngRoute'])
+      'productApp', 'proDetailApp', 'ngRoute', 'angular-loading-bar'])
   .filter('trustHtml', function ($sce) {
     return function (input) {
       return $sce.trustAsHtml(input);
