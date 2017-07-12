@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d5bf0ea-420a-4ac1-82c8-c48fb28dbd4d" name="Default" comment="wh">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/detail/d_avater.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/detail/daowei_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/detail/qrcode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/home/controllers/homeControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/home/homeApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/home/partials/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/home/services/homeServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/navFoot/controllers/navFootControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/navFoot/navFootApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/navFoot/services/navFootServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/product/controllers/productControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/product/partials/product.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/product/productApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/product/services/productServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/productDetail/controllers/proDetailControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/productDetail/partials/productDetail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/productDetail/proDetailApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/productDetail/services/proDetailServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/provider/controllers/providerControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/provider/partials/provider.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/provider/providerApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/provider/services/providerServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/user/controllers/userControllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/user/partials/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/user/partials/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/user/services/userServices.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/user/userApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/service-detail.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular-route.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mainApp.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/页面原图.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../~$目实战说明书.docx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/service-list.css" afterPath="$PROJECT_DIR$/css/service-list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service-detail.html" afterPath="$PROJECT_DIR$/service-detail.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -288,128 +250,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="navFoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao-way" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="navFoot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -538,7 +378,7 @@
       <workItem from="1499646471733" duration="41259000" />
       <workItem from="1499731934405" duration="35017000" />
       <workItem from="1499819311204" duration="8459000" />
-      <workItem from="1499828948340" duration="27661000" />
+      <workItem from="1499828948340" duration="27947000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1499762610184</created>
@@ -568,11 +408,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499778099037</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="w">
+      <created>1499867317820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1499867317820</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112396000" />
+    <option name="totallyTimeSpent" value="112682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -605,7 +452,8 @@
     <MESSAGE value=".." />
     <MESSAGE value="whatever" />
     <MESSAGE value="wh" />
-    <option name="LAST_COMMIT_MESSAGE" value="wh" />
+    <MESSAGE value="w" />
+    <option name="LAST_COMMIT_MESSAGE" value="w" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
