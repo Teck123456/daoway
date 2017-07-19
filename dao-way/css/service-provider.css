@@ -3,7 +3,7 @@
     background-color: #FBF8F8;
 }
 div.provider-wrapper{
-    margin: 70px auto 0;
+    margin: 0 auto;
     width: 1200px;
     background-color: #FBF8F8;
 }
@@ -37,6 +37,7 @@ div.provider-wrapper{
 }
 .img-container img{
     width: 100%;
+    background: url("http://www.w3school.com.cn/i/eg_tulip.jpg");
 }
 .box:hover{
     box-shadow: 6px 6px 20px rgba(0,0,25,.3);

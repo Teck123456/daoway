@@ -1,24 +1,24 @@
 <link rel="stylesheet" href="./css/login.css">
 <div class="loginReg-wrapper" id="login">
     <div class="logo"></div>
-    <form>
+    <form ng-submit="login(user)">
         <div class="name-wrapper inp">
             <label for="userName">
                 <i class="fa fa-user"></i>
             </label>
-            <input type="text" id="userName" name="userName">
+            <input type="text" id="userName" ng-model="user.userName" name="userName" placeholder="请输入用户名">
         </div>
         <div class="pwd-wrapper inp">
             <label for="password">
                 <i class="fa fa-lock"></i>
             </label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" ng-model="user.password" name="password" placeholder="请输入密码">
         </div>
         <div class="errorMsg">
-            <span>请输入您的昵称或手机号</span>
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <span ng-bind="errorMsg" ng-show="errorMsg"></span>
+            <i ng-click="closeMsg()" ng-show="errorMsg" class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <button type="button" class="login log_reg">登录</button>
+        <button type="submit" class="login log_reg">登录</button>
         <div class="bottom">
             <a href="javascript:;" class="forget">忘记密码</a>
             <a href="./main.html#/register" class="reg">注册</a>

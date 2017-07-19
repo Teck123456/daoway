@@ -5,10 +5,16 @@ angular
     function($rootScope, $scope, indexService) {
       $rootScope.isShow = true;
 
-      indexService.getMenu().success(function (data) {
+      indexService.getMenuList().success(function (data) {
+        $scope.items = data;
+        console.log(data)
+      })
+
+      indexService.getAllItems().success(function (data) {
         console.log(data)
         $scope.contents = data;
-
       })
+
+
 
     });

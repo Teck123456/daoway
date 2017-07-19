@@ -1,22 +1,60 @@
 html {
     overflow-x: hidden;
 }
-.active{
+
+.active {
     color: #E94840 !important;
 }
+
 .world {
     width: 100%;
     height: auto;
 }
 
-.header-wrapper{
+.header-wrapper {
     width: 100%;
     height: 70px;
     background-color: #fff;
-    position: fixed;
-    top: 0 ;
+    position: relative;
+    top: 0;
     z-index: 999;
+    border-bottom: 1px solid #e5e5e5;
+
 }
+
+.fixed-animated {
+    position: fixed;
+    -webkit-animation-name: fixedHeader;
+    animation-name: fixedHeader;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
+    transform-origin: center top;
+    border: none !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+}
+
+@keyframes fixedHeader {
+    0% {
+        opacity: 0;
+        transform: rotateX(100deg);
+        -webkit-transform: rotateX(100deg);
+        -moz-transform: rotateX(100deg);
+        -ms-transform: rotateX(100deg);
+        -o-transform: rotateX(100deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -o-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+    }
+
+}
+
 header {
     /*min-width: 1180px;*/
 
@@ -91,10 +129,7 @@ nav {
 }
 
 .menu-wrapper li:nth-child(2) a:hover,
-.menu-wrapper li:nth-child(3) a:hover,
-.menu-wrapper li:nth-child(4) a:hover,
-.menu-wrapper li:nth-child(5) a:hover,
-.menu-wrapper li:nth-child(6) a:hover {
+.menu-wrapper li:nth-child(3) a:hover{
     color: #E94840;
     transition: color 0.3s;
 }
@@ -105,7 +140,7 @@ nav {
 
 .banner {
     position: absolute;
-    top: 70px;
+    top: 0;
     z-index: 1;
     width: 100%;
     margin: 0 auto;
@@ -143,13 +178,19 @@ nav {
     background: url("../img/index/banner3.jpg") center;
 }
 
-.sticky-wrapper {
-    border: 1px solid transparent;
-    margin: 70px auto 0;
-    width: 1200px;
-    /*height: 420px;*/
+#combine-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-.sticky-wrapper .first-wrapper{
+.sticky-wrapper {
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    width: 1200px;
+    height: 420px;
+}
+
+.sticky-wrapper .first-wrapper {
     z-index: 30;
     margin-left: 30px;
     float: left;
@@ -157,88 +198,107 @@ nav {
     height: 420px;
     background-color: #757881;
 }
+
 .first-wrapper {
     position: relative;
 }
-.first-wrapper>li{
+
+.first-wrapper > li {
     /*position: relative;*/
     height: 42px;
     line-height: 42px;
 }
-.first-wrapper>li> a {
+
+.first-wrapper > li > a {
     display: block;
     color: white;
     padding-left: 50px;
 }
-.first-wrapper>li:hover{
+
+.first-wrapper > li:hover {
     background-color: #031C3E;
 }
+
 .first-wrapper i {
     display: inline-block;
     float: right;
     width: 6px;
     height: 11px;
-    transform: translate(-35px,-27px);
+    transform: translate(-35px, -27px);
     background: url("../img/index/right.png");
 }
-.first-wrapper>li:hover .little-wrapper {
+
+.first-wrapper > li:hover .little-wrapper {
     display: block;
 }
 
 .little-wrapper {
     display: none;
     position: absolute;
-    top: 0; left: 180px;
+    top: 0;
+    left: 180px;
     width: 200px;
-    height:420px;
-    background-color: rgba(255,255,255,0.7);
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
-.little-wrapper{
+
+.little-wrapper {
 }
-.little-wrapper a{
+
+.little-wrapper a {
     display: inline-block;
     width: 100%;
     color: black;
     font-weight: bold;
     text-indent: 60px;
 }
-.little-wrapper a:hover{
+
+.little-wrapper a:hover {
     transition: color .3s;
     color: #E94840;
 }
-.content-wrapper{
-    margin-top: 420px;
+
+.content-wrapper {
 }
+
 .common {
     padding: 60px 0 50px 0;
 }
-.common.odd{
+
+.common.odd {
     background-color: #fff;
 }
-.common.even{
+
+.common.even {
     background-color: #FBF8F8;
 }
-.container{
+
+.container {
     width: 1200px;
     margin: 0 auto;
     /*border: 1px solid red;*/
     text-align: center;
 }
-.container h2{
+
+.container h2 {
     font-size: 26px;
     line-height: 2;
 }
-.container p{
+
+.container p {
     font-size: 22px;
 }
-.container .moreInfo{
+
+.container .moreInfo {
     transform: translateY(-10px);
     font-size: 18px;
     text-align: right;
 }
-.box-wrapper{
+
+.box-wrapper {
     display: flex;
 }
+
 .box {
     position: relative;
     flex: 1;
@@ -249,47 +309,56 @@ nav {
     transition: box-shadow .3s;
 
 }
-.box:hover{
-    box-shadow: 6px 6px 20px rgba(0,0,25,.3);
+
+.box:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 25, .3);
 }
 
-
-.box .img-wrapper{
+.box .img-wrapper {
     width: 210px;
     height: 210px;
     margin: 10px;
 }
-.box .img-wrapper img{
+
+.box .img-wrapper img {
     width: 100%;
 }
+
 .text-wrapper {
     width: 210px;
     margin: 10px;
     text-align: left;
 }
-.text-wrapper h3{
+
+.text-wrapper h3 {
     font-size: 16px;
+    color: black;
 }
-.text-wrapper p{
+
+.text-wrapper p {
     font-size: 14px;
     color: #929292;
 }
+
 .litter-bar {
     margin: 0 auto;
     width: 100%;
     position: absolute;
     bottom: 10px;
 }
+
 .litter-bar .txt {
     padding-left: 20px;
     float: left;
     color: #FB474F;
     font-weight: bold;
 }
-.txt font{
+
+.txt font {
 
     font-size: 20px;
 }
+
 .litter-bar button {
     float: right;
     padding: 0 10px;
@@ -302,7 +371,8 @@ nav {
     border-radius: 6px;
     color: white;
 }
-.service{
+
+.service {
     margin-top: 40px;
 }
 
@@ -311,18 +381,21 @@ nav {
     margin: 0 auto;
     width: 858px;
 }
-.circle-wrapper .circle{
+
+.circle-wrapper .circle {
     position: relative;
     margin: 70px 120px 50px;
     width: 44px;
     height: 44px;
 }
+
 .circle:first-child,
 .circle:nth-child(2),
 .circle:last-child {
     background: url("../img/index/quan.png") no-repeat;
 }
-.circle span{
+
+.circle span {
     position: absolute;
     width: 100px;
     left: 50%;
@@ -330,35 +403,57 @@ nav {
     transform: translate(-50%, 15px);
 }
 
-footer{
+footer {
     margin: 20px auto 0;
     width: 1200px;
     text-indent: 30px;
 }
-footer .title{
+
+footer .title {
     font-weight: bold;
 }
-footer .cities{
+
+footer .cities {
     width: 1000px;
     margin-left: 200px;
     overflow: hidden;
 }
-.cities li{
+
+.cities li {
     float: left;
 }
-.cities a{
+
+.cities a {
     width: 100px;
     display: block;
     text-align: left;
     line-height: 40px;
 }
-.end{
+
+.end {
     background-color: #FBF8F8;
     padding: 30px 0 20px;
 }
-.end p{
+
+.end p {
     text-align: center;
     font-size: 14px;
     color: #929292;
     line-height: 40px;
+}
+
+#toTop {
+    z-index: 100;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #757881;
+    color: white;
+    position: fixed;
+    left: 50%;
+    bottom: 300px;
+    transform: translateX(640px);
+    cursor: pointer;
+    display: none;
 }

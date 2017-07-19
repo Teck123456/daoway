@@ -1,128 +1,50 @@
-    <div class="sticky-wrapper">
-        <ul class="first-wrapper">
-            <li ng-repeat="c in contents">
-                <a href="javascript:;">{{c.name}}</a><i></i>
-                <ul class="little-wrapper">
-                    <li ng-repeat="item in c.projects2"><a href="javascript:;">{{item.name}}</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="banner">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide first"></div>
-                <div class="swiper-slide second"></div>
-                <div class="swiper-slide third"></div>
+
+    <div id="combine-container">
+        <div class="sticky-wrapper">
+            <ul class="first-wrapper">
+                <li ng-repeat="i in items">
+                    <a href="javascript:;">{{i.typeName}}</a><i></i>
+                    <ul class="little-wrapper">
+                        <li ng-repeat="item in i.typeItems"><a href="javascript:;">{{item.name}}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide first"></div>
+                    <div class="swiper-slide second"></div>
+                    <div class="swiper-slide third"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
         </div>
     </div>
     <div class="content-wrapper">
-        <div class="{{$index % 2 ==0 ? 'odd': 'even'}} common" ng-repeat="c in contents">
+        <div class="{{$index % 2 ==0 ? 'odd': 'even'}} common" ng-repeat="provider in contents | orderBy:'typeCode'">
             <div class="container">
-                <h2>{{c.name}}</h2>
-                <p>{{c.detail}}</p>
+                <h2>{{provider.typeName}}</h2>
+                <p>{{provider.typeDesc}}</p>
                 <div class="moreInfo">
-                    <a href="#">更多服务&gt;</a>
+                    <a href="javscript:;">更多服务&gt;</a>
                 </div>
                 <div class="box-wrapper">
-                    <a href="#">
+                    <a ng-repeat="service in provider.serviceItems" href="./main.html/#proDetail/{{provider.provId}}/{{service.serviceId}}">
                         <div class="box">
                             <div class="img-wrapper">
-                                <img src="./img/index/house-clean_01.jpg">
+                                <img ng-src="{{service.img}}">
                             </div>
                             <div class="text-wrapper">
-                                <h3>家庭保洁</h3>
+                                <h3>{{service.serviceName}}</h3>
                                 <p class="description">
-                                    服务内容：
-                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
+                                    {{service.desc}}
                                 </p>
                             </div>
                             <div class="litter-bar">
                                 <div class="txt">
-                                    <font>30</font><span>元/小时</span>
-                                </div>
-                                <button>查看详情</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box">
-                            <div class="img-wrapper">
-                                <img src="./img/index/house-clean_01.jpg">
-                            </div>
-                            <div class="text-wrapper">
-                                <h3>家庭保洁</h3>
-                                <p class="description">
-                                    服务内容：
-                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
-                                </p>
-                            </div>
-                            <div class="litter-bar">
-                                <div class="txt">
-                                    <font>30</font><span>元/小时</span>
-                                </div>
-                                <button>查看详情</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box">
-                            <div class="img-wrapper">
-                                <img src="./img/index/house-clean_01.jpg">
-                            </div>
-                            <div class="text-wrapper">
-                                <h3>家庭保洁</h3>
-                                <p class="description">
-                                    服务内容：
-                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
-                                </p>
-                            </div>
-                            <div class="litter-bar">
-                                <div class="txt">
-                                    <font>30</font><span>元/小时</span>
-                                </div>
-                                <button>查看详情</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box">
-                            <div class="img-wrapper">
-                                <img src="./img/index/house-clean_01.jpg">
-                            </div>
-                            <div class="text-wrapper">
-                                <h3>家庭保洁</h3>
-                                <p class="description">
-                                    服务内容：
-                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
-                                </p>
-                            </div>
-                            <div class="litter-bar">
-                                <div class="txt">
-                                    <font>30</font><span>元/小时</span>
-                                </div>
-                                <button>查看详情</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="box">
-                            <div class="img-wrapper">
-                                <img src="./img/index/house-clean_01.jpg">
-                            </div>
-                            <div class="text-wrapper">
-                                <h3>家庭保洁</h3>
-                                <p class="description">
-                                    服务内容：
-                                    家庭保洁服务，2小时起订。（云家政暂时不提供带保...
-                                </p>
-                            </div>
-                            <div class="litter-bar">
-                                <div class="txt">
-                                    <font>30</font><span>元/小时</span>
+                                    <font>{{service.nowPrice}}</font><span>元/小时</span>
                                 </div>
                                 <button>查看详情</button>
                             </div>

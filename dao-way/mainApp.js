@@ -66,13 +66,13 @@ angular
               controller: 'providerCtrl',
             })
           .when(
-            '/product',
+            '/product/:id',
             {
               templateUrl: './components/product/partials/product.html',
               controller: 'productCtrl',
             })
           .when(
-            '/proDetail',
+            '/proDetail/:provId/:serviceId',
             {
               templateUrl: './components/productDetail/partials/productDetail.html',
               controller: 'proDetailCtrl',
@@ -80,4 +80,7 @@ angular
           redirectTo: '/index'
         });
 
-      }]);
+      }])
+  .run(['$anchorScroll', function ($anchorScroll) {
+    $anchorScroll.yOffset = 140;   // always scroll by 50 extra pixels
+  }]);

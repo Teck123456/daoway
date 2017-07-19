@@ -1,0 +1,387 @@
+{
+  "providers": [
+    {
+      "provId": 1,
+      "provName": "宜生到家",
+      "typeName": "上门按摩",
+      "typeCode": 2,
+      "provImg": "http://img.daoway.cn/img/2015/05/29/8a6352fd-9f05-457f-b794-777dd92f350d.jpg",
+      "ordersSuccess": 12021,
+      "typeDesc": "中医推拿/油压SPA/局部理疗/足疗套餐/美体塑形/母婴保健",
+      "goodRate": 98,
+      "ordersRate": 99,
+      "serviceItems": [
+        {
+          "serviceId": 101,
+          "serviceTitle": "足疗SPA",
+          "serviceName": "招牌Massage",
+          "img": "http://img.daoway.cn/img/2016/08/30/cce534a8-1360-487b-8e18-c404b9b71319_thumb.jpg",
+          "desc": "时长：90分钟 服务姿势：卧姿  适用介绍： 适用于工作繁忙...",
+          "nowPrice": 135,
+          "oldPrice": 168,
+          "hasSoldAccount": 2211
+        },
+        {
+          "serviceId": 102,
+          "serviceTitle": "中医推拿",
+          "serviceName": "肩颈腰调理",
+          "img": "http://img.daoway.cn/img/2016/08/10/e04f3160-116d-4030-a1ca-d5aab777d1ff.jpg",
+          "desc": "时长：50分钟 服务姿势：卧姿  适用介绍： 适用于因寒湿、...",
+          "nowPrice": 128,
+          "oldPrice": 158,
+          "hasSoldAccount": 663
+        },
+        {
+          "serviceId": 103,
+          "serviceTitle": "足疗SPA",
+          "serviceName": "足SPA",
+          "img": "http://img.daoway.cn/img/2016/08/10/88a996bb-b3fe-4726-88ef-5bdd96400aec.jpg",
+          "desc": "时长：90分钟 服务姿势：卧姿  适用介绍： 适用于工作压力...",
+          "nowPrice": 188,
+          "oldPrice": null,
+          "hasSoldAccount": 142
+        }
+      ],
+      "userRatings": [
+        {
+          "userAvatar": "http://wx.qlogo.cn/mmopen/Q3auHgzwzM40haUwPK2v6Jv3G8dOfD0psUaYicYlfHChAouQS9GRzaibLMe7lXszoTqFnL08uLWYSqsJd6o1WATg/0",
+          "userName": "苗苗32",
+          "stars": ["1","2","3","4","5"],
+          "ratingContent": "准时到达，服务专业，态度热情",
+          "address": "上海 普陀区"
+        }]
+    },
+    {
+      "provId": 2,
+      "provName": "云家政",
+      "typeName": "家庭保洁",
+      "typeCode": 1,
+      "provImg": "http://img.daoway.cn/img/6bbc9d19-c2b0-4e70-8a5c-8e6d3ca3abd3.jpg",
+      "ordersSuccess": 27011,
+      "typeDesc": "小时工/开荒保洁/擦玻璃/深度保洁/家居养护/杀虫灭鼠",
+      "goodRate": 86,
+      "ordersRate": 96,
+      "serviceItems": [
+        {
+          "serviceId": 201,
+          "serviceTitle": "",
+          "serviceName": "住家保姆试工",
+          "img": "http://img.daoway.cn/img/2017/04/12/9aa174a6-855a-4a43-abc3-c5d75ee6bf5c.jpg",
+          "desc": "特别声明： 试用期间阿姨不住家，每天工作8小时，试用满意免佣...",
+          "nowPrice": 199.5,
+          "oldPrice": 480,
+          "hasSoldAccount": 14
+        },
+        {
+          "serviceId": 202,
+          "serviceTitle": "",
+          "serviceName": "育儿嫂试工",
+          "img": "http://img.daoway.cn/img/2017/04/12/46953674-d1ec-4bcd-a8e6-77fb1a174faa.jpg",
+          "desc": "特别声明： 试用期间阿姨不住家，每天工作8小时，试用满意免佣...",
+          "nowPrice": 249.5,
+          "oldPrice": 620,
+          "hasSoldAccount": 0
+        },
+        {
+          "serviceId": 203,
+          "serviceTitle": "家庭保洁",
+          "serviceName": "家庭保洁",
+          "img": "http://img.daoway.cn/img/2016/08/29/b5a9f2b6-f7b5-4b58-a048-90fd635fbdd5_thumb.jpg",
+          "desc": "家庭保洁服务，2小时起订，服务商携带清洁装备...",
+          "nowPrice": 25,
+          "oldPrice": 50,
+          "hasSoldAccount": 19092
+        }
+      ],
+      "userRatings": [
+        {
+          "userAvatar": "http://img.daoway.cn/img/2017/06/22/54c028da-53ec-4fc1-8d1b-b171d87285d6.jpg",
+          "userName": "马俊昌",
+          "stars": ["1","2","3","4"],
+          "ratingContent": "服务专业,",
+          "address": "上海 杨浦区"
+        }
+      ]
+    },
+    {
+      "provId": 3,
+      "provName": "哈喽维修",
+      "typeName": "上门维修",
+      "typeCode": 3,
+      "provImg": "http://img.daoway.cn/img/2016/05/26/2ec89206-be1d-45a3-94e0-c3e8affd930d.jpg",
+      "ordersSuccess": 233,
+      "typeDesc": "机维修/家电维修/电脑维修/家庭维修/管道疏通/开锁换锁/安装打孔/空气净化",
+      "goodRate": 98,
+      "ordersRate": 100,
+      "serviceItems": [
+        {
+          "serviceId": 301,
+          "serviceTitle": "上门换屏",
+          "serviceName": "苹果7 外屏碎上门维修",
+          "img": "http://img.daoway.cn/img/2017/01/05/701e4729-c61f-4b0d-90ed-ce25931e27f5_thumb.jpg",
+          "desc": "故障描述： 1.外屏碎 内屏显示正常 无黑点 压伤 黄斑 2...",
+          "nowPrice": 488,
+          "oldPrice": null,
+          "hasSoldAccount": 2
+        },
+        {
+          "serviceId": 302,
+          "serviceTitle": "上门换屏",
+          "serviceName": "苹果6Plus 外屏碎",
+          "img": "http://img.daoway.cn/img/2016/09/02/9511ffa1-2852-4294-be4b-821e754b0238_thumb.jpg",
+          "desc": "故障描述： 1.手机外屏破碎，显示和触摸正常。 2.工程师检...",
+          "nowPrice": 288,
+          "oldPrice": null,
+          "hasSoldAccount": 160
+        },
+        {
+          "serviceId": 303,
+          "serviceTitle": "硬盘升级",
+          "serviceName": "苹果6/6P升级内存128G",
+          "img": "http://img.daoway.cn/img/2017/01/05/701e4729-c61f-4b0d-90ed-ce25931e27f5_thumb.jpg",
+          "desc": "服务内容： 1.苹果升级硬盘64G/扩容64G； 2.此服务...",
+          "nowPrice": 468,
+          "oldPrice": null,
+          "hasSoldAccount": 14
+        }
+      ],
+      "userRatings": [
+        {
+          "userAvatar": "http://wx.qlogo.cn/mmopen/PiajxSqBRaEJuYxTGtx8CwsdqeX4C005Z5aSXKS9HZrk6T8ykicwsTy0OficmmkBYpyI3foricPx43G5M5PElS008Q/0",
+          "userName": "吉虹",
+          "stars": ["1","2","3","4","5"],
+          "ratingContent": "态度热情，服务专业，准时到达",
+          "address": "北京 顺义区"
+        },
+        {
+          "userAvatar": "http://tp2.sinaimg.cn/1853278097/180/5725117555/0",
+          "userName": "Teck123",
+          "stars": ["1","2","3","4"],
+          "ratingContent": "王月琴阿姨做事认真，好评",
+          "address": "北京 朝阳区"
+        }
+      ]
+    }
+  ],
+  "catos": [
+    {
+      "typeCode": 1,
+      "typeName": "家庭保洁",
+      "typeItems": [
+        {
+          "name": "小时工"
+        },
+        {
+          "name": "开荒保洁"
+        },
+        {
+          "name": "擦玻璃"
+        },
+        {
+          "name": "家居养护"
+        },
+        {
+          "name": "杀虫灭鼠"
+        }
+      ]
+    },
+    {
+      "typeCode": 2,
+      "typeName": "上门按摩",
+      "typeItems": [
+        {
+          "name": "中医推拿"
+        },
+        {
+          "name": "油压SPA"
+        },
+        {
+          "name": "局部理疗"
+        },
+        {
+          "name": "足疗套餐"
+        },
+        {
+          "name": "美体塑形"
+        },
+        {
+          "name": "母婴保健"
+        }
+      ]
+    },
+    {
+      "typeCode": 3,
+      "typeName": "上门维修",
+      "typeItems": [
+        {
+          "name": "手机维修"
+        },
+        {
+          "name": "家电维修"
+        },
+        {
+          "name": "电脑维修"
+        },
+        {
+          "name": "管道疏通"
+        },
+        {
+          "name": "开锁换锁"
+        },
+        {
+          "name": "安装打孔"
+        },
+        {
+          "name": "空气净化"
+        }
+      ]
+    },
+    {
+      "typeCode": 4,
+      "typeName": "家电清洗",
+      "typeItems": [
+        {
+          "name": "空调清洗"
+        },
+        {
+          "name": "油烟机清洗"
+        },
+        {
+          "name": "洗衣机清洗"
+        },
+        {
+          "name": "冰箱清洗"
+        },
+        {
+          "name": "燃气灶清洗"
+        },
+        {
+          "name": "热水器清洗"
+        },
+        {
+          "name": "微波炉清洗"
+        },
+        {
+          "name": "饮水机清洗"
+        }
+      ]
+    },
+    {
+      "typeCode": 5,
+      "typeName": "衣物洗护",
+      "typeItems": [
+        {
+          "name": "洗衣"
+        },
+        {
+          "name": "洗鞋修鞋"
+        },
+        {
+          "name": "家纺清洗"
+        },
+        {
+          "name": "箱包洗护"
+        },
+        {
+          "name": "定制改衣"
+        }
+      ]
+    },
+    {
+      "typeCode": 6,
+      "typeName": "搬家速运",
+      "typeItems": [
+        {
+          "name": "搬家租车"
+        },
+        {
+          "name": "拆装搬运"
+        },
+        {
+          "name": "搬家套餐"
+        },
+        {
+          "name": "仓储寄存"
+        }
+      ]
+    },
+    {
+      "typeCode": 7,
+      "typeName": "美容美妆",
+      "typeItems": [
+        {
+          "name": "化妆"
+        },
+        {
+          "name": "美甲"
+        },
+        {
+          "name": "美睫"
+        },
+        {
+          "name": "美容"
+        },
+        {
+          "name": "美发"
+        },
+        {
+          "name": "半永久"
+        }
+      ]
+    },
+    {
+      "typeCode": 8,
+      "typeName": "鲜花绿植",
+      "typeItems": [
+        {
+          "name": "包月鲜花"
+        },
+        {
+          "name": "礼品用花"
+        },
+        {
+          "name": "绿植"
+        }
+      ]
+    },
+    {
+      "typeCode": 9,
+      "typeName": "上门医护",
+      "typeItems": [
+        {
+          "name": "护士上门"
+        },
+        {
+          "name": "挂号陪诊"
+        },
+        {
+          "name": "康复陪护"
+        },
+        {
+          "name": "私人医生"
+        }
+      ]
+    },
+    {
+      "typeCode": 10,
+      "typeName": "养车用车",
+      "typeItems": [
+        {
+          "name": "上门养车"
+        },
+        {
+          "name": "上门洗车"
+        },
+        {
+          "name": "汽车陪练"
+        },
+        {
+          "name": "机场泊车"
+        },
+        {
+          "name": "验车"
+        }
+      ]
+    }
+  ]
+}

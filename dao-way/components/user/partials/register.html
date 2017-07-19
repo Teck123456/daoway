@@ -2,22 +2,25 @@
     <!--注册页面-->
     <div class="loginReg-wrapper" id="register">
         <div class="logo"></div>
-        <form>
+        <form ng-submit="register(user, checkPwd)">
             <div class="name-wrapper inp">
-                <input type="text" id="regUserName" name="userName">
+                <input ng-model="user.userName" type="text" id="regUserName" name="userName"
+                    placeholder="请输入用户名">
             </div>
 
             <div class="pwd-wrapper inp">
-                <input type="password" id="recheck" name="password">
+                <input ng-model="user.password" type="password" id="recheck" name="password"
+                    placeholder="请输入密码">
             </div>
             <div class="pwd-wrapper inp">
-                <input type="password" id="password" name="password">
+                <input ng-model="checkPwd" type="password" id="password" name="password"
+                    placeholder="请输入确认密码">
             </div>
             <div class="errorMsg">
-                <span>手机号不正确！</span>
-                <i class="fa fa-times" aria-hidden="true"></i>
+                <span ng-bind="errorMsg" ng-show="errorMsg"></span>
+                <i ng-click="closeMsg()" ng-show="errorMsg" class="fa fa-times" aria-hidden="true"></i>
             </div>
-            <button type="button" class="login log_reg">注册</button>
+            <button type="submit" class="login log_reg">注册</button>
             <div class="bottom">
                 <a href="./main.html#/login" class="login">已有账户？登录</a>
             </div>

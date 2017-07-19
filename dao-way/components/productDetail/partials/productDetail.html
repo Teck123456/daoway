@@ -3,21 +3,21 @@
     <div id="det-container">
         <div class="bread">
             <span>所有分类&nbsp;&gt;</span>
-            <span>家庭保洁&nbsp;&gt;</span>
-            <span class="active">家庭保洁</span>
+            <span>{{provider.typeName}}&nbsp;&gt;</span>
+            <span class="active">{{item.serviceTitle}}</span>
         </div>
         <div class="det-lt">
             <div class="lt-top color">
                 <div class="img-cont">
-                    <img src="./img/detail/d_avater.jpg" alt="">
+                    <img ng-src="{{item.img}}"/>
                 </div>
                 <div class="desc-cont">
-                    <h4>室内保洁</h4>
+                    <h4>{{item.serviceName}}</h4>
                     <div class="price font">
                         价格
-                        <span>29</span>
+                        <span>{{item.nowPrice}}</span>
                         <font>元/小时</font>
-                        <span>原价50元</span>
+                        <span ng-show="item.oldPrice">原价{{item.oldPrice}}元</span>
                     </div>
                     <div class="discount font">
                         优惠
@@ -25,7 +25,7 @@
                     </div>
                     <div class="sellout font">
                         已售
-                        <span>28290</span>
+                        <span>{{item.hasSoldAccount}}</span>
                     </div>
                 </div>
                 <div class="qrcode-cont">
@@ -97,19 +97,19 @@
         <div class="det-rt">
             <div class="rt-top color">
                 <h3>服务商</h3>
-                <img src="./img/detail/daowei_logo.jpg">
-                <h4>三鼎家政</h4>
+                <img ng-src="{{provider.provImg}}">
+                <h4>{{provider.provName}}</h4>
                 <div class="lr-wrapper">
                     <span class="left">成功接单</span>
-                    <span class="rt">13938</span>
+                    <span class="rt">{{provider.ordersSuccess}}</span>
                 </div>
                 <div class="lr-wrapper">
                     <span class="left">接单率</span>
-                    <span class="rt">99%</span>
+                    <span class="rt">{{provider.ordersRate}}%</span>
                 </div>
                 <div class="lr-wrapper">
                     <span class="left">好评率</span>
-                    <span class="rt">84%</span>
+                    <span class="rt">{{provider.goodRate}}%</span>
                 </div>
             </div>
             <div class="rt-bottom">

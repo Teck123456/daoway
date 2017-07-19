@@ -1,7 +1,7 @@
 #list-wrapper {
     background-color: #F8F8F8;
     min-width: 1200px;
-    padding-top: 80px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -282,7 +282,9 @@ li.right .small-wrapper {
 }
 
 .desc-wrapper .last {
-    margin-left: 500px;
+    float: right;
+    position: relative;
+    right: 20px;
 }
 
 /*评论样式编写*/

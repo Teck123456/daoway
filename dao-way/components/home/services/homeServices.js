@@ -1,13 +1,10 @@
 angular.module('homeApp.services', []).factory('indexService', function ($http) {
   return {
-    login: function (user) {
-      return $http.get("system/login", user);
+    getMenuList: function () {
+      return $http.get('http://192.168.1.12:3000/catos');
     },
-    register: function (user) {
-      return $http.post("system/register", user);
-    },
-    getMenu: function () {
-      return $http.get('http://localhost:808/projects');
-    },
+    getAllItems: function () {
+      return $http.get('http://192.168.1.12:3000/providers');
+    }
   };
 });
